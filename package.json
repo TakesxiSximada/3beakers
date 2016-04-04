@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "build": "eslint",
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "lint": "node_modules/.bin/eslint src"
+      "env": "echo 'PATH=`npm bin`:$PATH'",
+      "test": "mocha src/tests.js",
+      "lint": "eslint src",
+      "end": "OK"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3",
+    "mocha": "^2.4.5",
     "webpack": "^1.12.14"
   }
 }
