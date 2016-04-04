@@ -1,3 +1,8 @@
-//
+const foo = "world";
 
-console.log('OK');
+function hello(name) {
+    const msg = `Hello ${name}!`;
+    document.write(msg);
+}
+
+hello(foo);
