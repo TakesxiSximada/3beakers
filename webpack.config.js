@@ -40,7 +40,10 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 query: {
-                    presets: ['es2015'],
+                    presets: [
+                        'es2015',
+                        'react',
+                    ],
                     plugins: [
                         'transform-es2015-arrow-functions',
                         'transform-object-assign',
