@@ -1,4 +1,5 @@
 *~
+dist
 .module-cache
 node_modules
 bower_components
