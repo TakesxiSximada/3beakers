@@ -28,7 +28,7 @@ export const selectBeaker = (index: number) => ({type: SELECT_BEAKER, index: ind
 const reducer = (state = initialState, action: any) => {
   switch (action.type) {
     case SELECT_BEAKER:
-      if (state.sourceIndex === null) {
+      if (state.sourceIndex == null) {
 	return {
 	  ...state,
 	  sourceIndex: action.index,
@@ -40,12 +40,12 @@ const reducer = (state = initialState, action: any) => {
 	const movableCount = srcBeaker.currentCount <= avaiableCount ? srcBeaker.currentCount : avaiableCount;
 	const newBeakerList = state.beakerList.map(
 	  (beaker: any, index: number) => {
-	    if (index == state.sourceIndex) {  // source beaker
+	    if (index === state.sourceIndex) {  // source beaker
 	      return {
 		...beaker,
 		currentCount: beaker.currentCount - movableCount,
 	      }
-	    } else if (index == action.index) {  // destination beaker
+	    } else if (index === action.index) {  // destination beaker
 	      return {
 		...beaker,
 		currentCount: beaker.currentCount + movableCount,

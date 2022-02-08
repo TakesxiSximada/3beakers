@@ -35,7 +35,7 @@ const mapStateToProps = (state: any) => {
   return {
     name: state.name,
     beakerList: state.beakerList,
-    isCompleted: () => state.beakerList.some((elm: any) => elm.currentCount == 4),
+    isCompleted: () => state.beakerList.some((elm: any) => elm.currentCount === 4),
   }
 };
 
