@@ -5,26 +5,29 @@ import './App.css';
 import { selectBeaker } from './store'
 
 
-const printBeaker = (beaker: any) => `${beaker.currentCount} / ${beaker.maxCount}`;
+const printBeaker = (beaker: any) => (<span><span>{beaker.currentCount}</span><hr /><span>{beaker.maxCount}</span></span>);
 
 function App(props: any) {
   return (
     <div className="App">
-      {
-	props.isCompleted() && (
-	    <div>
-	      <span>Game Clear</span>
-	      <span>Congratulations!!</span>
-	    </div>
-	)
-      }
       <header className="App-header">
+        <h1>3 Beakers</h1>
+        <div className="BeakerList">
         {
           props.beakerList.map(
             (beaker: any, index: number) => (
-	      <span onClick={props.selectBeaker} data-index={index} key={index}>{printBeaker(beaker)}</span>
-	    )
-	  )
+              <div className="Beaker" onClick={props.selectBeaker} data-index={index} key={index}>{printBeaker(beaker)}</div>
+            )
+          )
+        }
+        </div>
+        {
+          props.isCompleted() && (
+              <div>
+                <p>Game Clear</p>
+                <p>Congratulations!!</p>
+              </div>
+          )
         }
       </header>
     </div>
