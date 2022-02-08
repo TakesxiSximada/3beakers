@@ -36,6 +36,10 @@
   display: flex;
 }
 
+.MaxCount {
+  color: white;
+}
+
 .Beaker {
  padding: 3rem;
  color: black;

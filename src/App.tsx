@@ -5,7 +5,7 @@ import './App.css';
 import { selectBeaker } from './store'
 
 
-const printBeaker = (beaker: any) => (<span><span>{beaker.currentCount}</span><hr /><span>{beaker.maxCount}</span></span>);
+const printBeaker = (beaker: any) => (<span><span>{beaker.currentCount}</span><hr /><span className="MaxCount">{beaker.maxCount}</span></span>);
 
 function App(props: any) {
   return (
