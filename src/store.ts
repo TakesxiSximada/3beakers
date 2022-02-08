@@ -33,6 +33,11 @@ const reducer = (state = initialState, action: any) => {
 	  ...state,
 	  sourceIndex: action.index,
 	}
+      } else if (state.sourceIndex == action.index) {
+	return {
+	  ...state,
+	  sourceIndex: null,
+	}
       } else {
 	const srcBeaker = state.beakerList[state.sourceIndex];
 	const destBeaker = state.beakerList[action.index];
