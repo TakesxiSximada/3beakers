@@ -49,3 +49,8 @@
  background-size: 80%;
  background-repeat: no-repeat;
 }
+
+.Beaker.selected {
+ background-color: #96969644;
+ border-radius: 10px;
+}

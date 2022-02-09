@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import './App.css';
 import { selectBeaker } from './store'
 
-
 const printBeaker = (beaker: any) => (<span><span>{beaker.currentCount}</span><hr /><span className="MaxCount">{beaker.maxCount}</span></span>);
 
 function App(props: any) {
@@ -15,9 +14,10 @@ function App(props: any) {
         <div className="BeakerList">
         {
           props.beakerList.map(
-            (beaker: any, index: number) => (
-              <div className="Beaker" onClick={props.selectBeaker} data-index={index} key={index}>{printBeaker(beaker)}</div>
-            )
+            (beaker: any, index: number) => {
+	      const classStyle = props.sourceIndex == index ? "Beaker selected" : "Beaker";
+	      return (<div className={classStyle} onClick={props.selectBeaker} data-index={index} key={index}>{printBeaker(beaker)}</div>);
+            }
           )
         }
         </div>
@@ -39,6 +39,7 @@ const mapStateToProps = (state: any) => {
     name: state.name,
     beakerList: state.beakerList,
     isCompleted: () => state.beakerList.some((elm: any) => elm.currentCount == 4),
+    sourceIndex: state.sourceIndex,
   }
 };
 
