@@ -6,6 +6,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
 
+import TagManager from 'react-gtm-module';
+
+if (process.env.REACT_APP_GTM_ID) {
+  TagManager.initialize(
+    {
+      gtmId: process.env.REACT_APP_GTM_ID,
+    }
+  )
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
