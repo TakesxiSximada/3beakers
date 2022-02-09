@@ -55,17 +55,28 @@
  border-radius: 10px;
 }
 
-footer {
+footer a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.footer-menu {
   padding: 10px 0;
   display: inline-flex;
   justify-content: space-around;
 }
 
-footer a {
+.footer-menu a {
   color: white;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  margin: 0px;
 }

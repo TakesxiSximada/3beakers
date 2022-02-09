@@ -33,10 +33,13 @@ function App(props: any) {
 
       <hr />
       <footer>
-        <a href="https://github.com/TakesxiSximada/3beakers/archive/refs/heads/main.zip">Download</a>
-        <a href="https://github.com/TakesxiSximada/3beakers">Repository</a>
-        <a href="https://github.com/TakesxiSximada/3beakers/blob/main/COPYING">License</a>
-        <a href="https://blog.symdon.info/posts/1644328105/">Tech Stack</a>
+        <div className="footer-menu">
+          <a href="https://github.com/TakesxiSximada/3beakers/archive/refs/heads/main.zip">Download</a>
+          <a href="https://github.com/TakesxiSximada/3beakers">Repository</a>
+          <a href="https://github.com/TakesxiSximada/3beakers/blob/main/COPYING">License</a>
+          <a href="https://blog.symdon.info/posts/1644328105/">Tech Stack</a>
+        </div>
+        <p className="copyright"><a href="https://www.symdon.info">© 2022 symdon</a></p>
       </footer>
     </div>
   );
