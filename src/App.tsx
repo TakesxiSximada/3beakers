@@ -30,6 +30,14 @@ function App(props: any) {
           )
         }
       </header>
+
+      <hr />
+      <footer>
+        <a href="https://github.com/TakesxiSximada/3beakers/archive/refs/heads/main.zip">Download</a>
+        <a href="https://github.com/TakesxiSximada/3beakers">Repository</a>
+        <a href="https://github.com/TakesxiSximada/3beakers/blob/main/COPYING">License</a>
+        <a href="https://blog.symdon.info/posts/1644328105/">Tech Stack</a>
+      </footer>
     </div>
   );
 }
