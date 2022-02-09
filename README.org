@@ -63,7 +63,7 @@ Access http://localhost:3000/ by your web browser.
 
 ** Document
 
-No document.
+[[https://blog.symdon.info/posts/1644328105/]]
 
 ** Issue
 
@@ -75,7 +75,8 @@ No chat.
 
 * Environment
 
-- Production :: [[https://3beakers.symdon.info/]]
+- production :: [[https://3beakers.symdon.info/]]
+- local :: [[http://localhost:3000/]]
 
 * License
 
