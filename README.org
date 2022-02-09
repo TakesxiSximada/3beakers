@@ -1,0 +1,92 @@
+#+TITLE: 3 Beakers
+
+[[https://therealsujitk-vercel-badge.vercel.app/badge.svg?app=3breakers.symdon.info]]
+
+This is simple game. You operate 3 beakers and get 4.
+
+[[https://res.cloudinary.com/symdon/image/upload/v1644394170/blog.symdon.info/1644328105/3beakers-screenshot_b4evoe.png]]
+
+* Why?
+
+I craeted this application for the purpose of practice,
+because I needed to recall how to use React and Redux.
+Since I created the application, decided to deploy it.
+
+* Other solutions
+
+No other solutions, because this is my practice.
+
+* Description
+
+Simple game.
+
+** Demo
+
+[[https://res.cloudinary.com/symdon/image/upload/v1644397955/blog.symdon.info/1644328105/3beakers-demo_en6osk.gif]]
+
+** Feature
+
+You can play the game.
+
+** How to use
+
+*** Usage
+
+1. Selct source beaker.
+2. Selct desitnation beaker.
+
+   Number move to destination from source if movable.
+
+Repeat the same operation to create number 4.
+
+*** Requirements
+
+- Node v14.17.5 or later
+
+*** Install and start
+
+Install dependency packages by npm.
+
+#+begin_src
+npm install
+#+end_src
+
+Start development server.
+
+#+begin_src
+npm run start
+#+end_src
+
+Access http://localhost:3000/ by your web browser.
+
+* Contribution
+
+** Document
+
+No document.
+
+** Issue
+
+https://github.com/TakesxiSximada/3beakers/issues
+
+** Discussion
+
+No chat.
+
+* Environment
+
+- Production :: [[https://3beakers.symdon.info/]]
+
+* License
+
+GNU Affero General Public License
+
+* Maintainer and Contributers
+
+** Maintainer
+
+- [[https://github.com/TakesxiSximada][TakesxiSximada]]
+
+** Contributers
+
+See [[https://github.com/TakesxiSximada/3beakers/graphs/contributors]].
